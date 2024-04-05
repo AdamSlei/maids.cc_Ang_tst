@@ -102,7 +102,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@ngx-loading-bar/core/loading-bar.core.css",
+              "node_modules/@ngx-loading-bar/http-client/loading-bar.http-client.css"
             ],
             "scripts": []
           }

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserDetailComponent } from './components/user-detail/user-detail.component';
+import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { UserDetailComponent } from './components/user-detail/user-detail.compon
     AppRoutingModule,
     HttpClientModule,
     NgxPaginationModule,
+    LoadingBarHttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
