@@ -1,0 +1,16 @@
+<div class="user-list">
+  <div
+    *ngFor="
+      let user of filteredUsers
+        | paginate : { itemsPerPage: 10, currentPage: currentPage }
+    "
+    class="user-card"
+    [routerLink]="['/user', user.id]"
+  >
+    <img [src]="user.avatar" alt="User Avatar" />
+    <h2>{{ user.first_name }} {{ user.last_name }}</h2>
+    <p>ID: {{ user.id }}</p>
+  </div>
+</div>
+
+<pagination-controls (pageChange)="currentPage = $event"></pagination-controls>
